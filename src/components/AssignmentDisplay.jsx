@@ -15,6 +15,6 @@ export function AssignmentDisplay({ assignments }) {
         ))}
       </ul>
     </div>
-  );  
+  );
 }
 
