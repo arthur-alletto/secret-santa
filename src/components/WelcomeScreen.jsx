@@ -9,7 +9,6 @@ export function WelcomeScreen({ onStart }) {
       <button onClick={onStart} className="text-xl uppercase px-8 py-3 bg-[var(--color-btn)] text-white border-4 border-[var(--color-btn)] font-medium rounded-full hover:bg-transparent hover:text-[var(--color-btn)]">
         Commencer
       </button>
-    
     </div>
     
   );

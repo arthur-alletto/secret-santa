@@ -73,7 +73,6 @@ export default function App() {
             </div>
           </>
         )}
-        // ASSIGNMENTS
         {currentScreen === "assignments" && (
           <>
             <h2 className="text-2xl font-bold mb-6 text-center">
