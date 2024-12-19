@@ -58,16 +58,13 @@ export default function App() {
         )}
         {currentScreen === "input" && (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Ajoutez les participants
-            </h2>
             <ParticipantInput
               onAddParticipant={addParticipant}
               participants={participants}
               onRemoveParticipant={removeParticipant}
             />
-            <div className="mt-6">
-              <button className="button w-full" onClick={distributeGifts}>
+            <div className="absolute bottom-18 w-full flex justify-center z-10">
+              <button className=" text-xl uppercase px-8 py-3 bg-[var(--color-btn)] text-white border-4 border-[var(--color-btn)] font-DMsans font-extrabold rounded-full hover:bg-transparent hover:text-[var(--color-btn)]" onClick={distributeGifts}>
                 Distribuer les cadeaux
               </button>
             </div>
@@ -75,12 +72,9 @@ export default function App() {
         )}
         {currentScreen === "assignments" && (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Attributions des cadeaux
-            </h2>
             <AssignmentDisplay assignments={assignments} />
-            <div className="mt-6">
-              <button className="button w-full" onClick={resetApp}>
+            <div className="absolute bottom-14 w-full flex justify-center z-10">
+              <button className=" text-xl uppercase px-8 py-3 bg-[var(--color-btn)] text-white border-4 border-[var(--color-btn)] font-DMsans font-extrabold rounded-full hover:bg-transparent hover:text-[var(--color-btn)]" onClick={resetApp}>
                 Recommencer
               </button>
             </div>

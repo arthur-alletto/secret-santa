@@ -23,37 +23,34 @@ export function ParticipantInput({
   };
 
   return (
-    <div className="space-y-4">
-      // Champs de saisie pour ajouter un participant
-      <div className="flex space-x-2">
+    <div className="space-y-4 pt-85 min-h-screen flex flex-col items-center justify-start bg-ecran2 bg-cover bg-center">
+      <div className="space-x-2 flex">
         <input
           type="text"
-          className="input flex-grow"
+          className="input flex-grow font-DMsans text-2xl font-regular rounded-full py-2 pl-6 bg-[var(--color-btn)] text-white"
           placeholder="Entrez un nom"
           value={currentName}
           onChange={(e) => setCurrentName(e.target.value)}
           onKeyPress={(e) => e.key === "Enter" && addParticipant()}
         />
-        <button className="button" onClick={addParticipant}>
-          Ajouter
+        <button className="font-DMsans font-black text-5xl px-4 rounded-full text-center bg-red-600 text-white button" onClick={addParticipant}>
+          +
         </button>
       </div>
-      // Liste des participants ajoutés
-      <ul className="space-y-2">
+      <ul className="space-y-2 w-full pt-2 flex flex-col items-center rounded-lg">
         {participants.map((name, index) => (
-          <li key={index} className="list-item">
-            {name}
-            <div className="space-x-2">
-              <button
-                className="text-red-500 hover:text-red-700"
-                onClick={() => onRemoveParticipant(index)}
-              >
-                Supprimer
-              </button>
-            </div>
+          <li key={index} className="flex items-center justify-between w-[300px] font-DMsans font-bold text-2xl text-[var(--color-btn)]">
+            <span className="truncate">{name}</span>
+            <button
+              className="font-DMsans font-black text-xl px-3 rounded-full text-center bg-red-600 text-white"
+              onClick={() => onRemoveParticipant(index)}
+            >
+              -
+            </button>
           </li>
         ))}
       </ul>
     </div>
   );
+
 }

@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -8,6 +9,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -15,14 +17,25 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
-  :root{
+
+  :root {
     --color-btn: #094C62;
   }
+
+  .bg-ecran1 {
+    background-image: url('/assets/fond-1.svg');
+  }
+
+  .bg-ecran2 {
+    background-image: url('/assets/fond-2.svg');
+  }
+
+  .bg-ecran3 {
+    background-image: url('/assets/fond-3.svg');
+  }
+
 }
 
-@layer base {
-  .bg-custom {
-  background-image: url('/assets/fond-1.png');
+@theme {
+  --font-DMsans: "DM Sans";
 }
-}
-
