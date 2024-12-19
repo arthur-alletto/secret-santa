@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -16,4 +15,14 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+  :root{
+    --color-btn: #094C62;
+  }
 }
+
+@layer base {
+  .bg-custom {
+  background-image: url('./assets/fond-1.png');
+}
+}
+

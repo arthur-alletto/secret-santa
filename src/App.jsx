@@ -51,13 +51,11 @@ export default function App() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto">
       <div>
-        // affiche l'écran en fonction de l'état de l'application // WELCOME
         {currentScreen === "welcome" && (
           <WelcomeScreen onStart={() => setCurrentScreen("input")} />
         )}
-        // INPUT
         {currentScreen === "input" && (
           <>
             <h2 className="text-2xl font-bold mb-6 text-center">
