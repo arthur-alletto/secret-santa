@@ -22,7 +22,7 @@
 
 @layer base {
   .bg-custom {
-  background-image: url('./assets/fond-1.png');
+  background-image: url('/assets/fond-1.png');
 }
 }
 
