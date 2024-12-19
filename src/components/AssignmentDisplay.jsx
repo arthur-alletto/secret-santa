@@ -1,5 +1,8 @@
 // Ce composant affiche la liste des assignments
 // Il prend en props le tableau d'assignments
+
+// -----------------A OUVRIR EN FORMAT IPHONE 14--------------------//
+
 export function AssignmentDisplay({ assignments }) {
   return (
     <div className="min-h-screen bg-ecran3 bg-cover bg-center flex justify-center items-center pt-20">
@@ -12,6 +15,6 @@ export function AssignmentDisplay({ assignments }) {
         ))}
       </ul>
     </div>
-  );
+  );  
 }
 
